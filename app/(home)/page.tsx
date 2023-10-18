@@ -1,4 +1,4 @@
-import PostMain from './components/PostMain'
+import PostMain from '@/app/components/PostMain'
 
 export default function Home() {
   return (

@@ -1,8 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import TopNav from './components/TopNav'
-import SideNavMain from './components/SideNavMain'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,13 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopNav />
-        <div className="mx-auto flex w-full max-w-[1140px] justify-between px-0 lg:px-2.5">
-          <div>
-            <SideNavMain />
-          </div>
           {children}
-        </div>
       </body>
     </html>
   )
