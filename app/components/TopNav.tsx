@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import SearchIcon from '@mui/icons-material/Search'
-import User from './User'
-import Upload from './Upload'
+import UserButton from './UserButton'
+import UploadButton from './UploadButton'
 
 const TopNav = () => {
   return (
@@ -12,7 +12,6 @@ const TopNav = () => {
           <Link href="/">
             <div className="relative h-10 w-[115px]">
               <Image
-                priority
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 referrerPolicy="no-referrer"
@@ -35,8 +34,8 @@ const TopNav = () => {
         </div>
 
         <div className="flex w-full min-w-[275px] max-w-[320px] items-center justify-end gap-3">
-          <Upload />
-          <User />
+          <UploadButton />
+          <UserButton />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import Image from 'next/image'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined'
 
-const User = () => {
+const UserButton = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
 
@@ -81,4 +81,4 @@ const User = () => {
   )
 }
 
-export default User
+export default UserButton

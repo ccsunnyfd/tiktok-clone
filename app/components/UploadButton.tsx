@@ -2,7 +2,7 @@
 
 import AddIcon from '@mui/icons-material/Add'
 
-const Upload = () => {
+const UploadButton = () => {
   return (
     <button
       onClick={() => {}}
@@ -14,4 +14,4 @@ const Upload = () => {
   )
 }
 
-export default Upload
+export default UploadButton
