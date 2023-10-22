@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined'
 import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined'
-import { Icons } from '@/app/upload/components/Icons'
+import { Icons } from '@/app/components/Icons'
 
 type PostUserProps = {
   post: {

@@ -1,4 +1,4 @@
-import { LucideProps, Loader2 } from 'lucide-react'
+import { LucideProps, Loader2, Trash2 } from 'lucide-react'
 
 export const Icons = {
   CutterOff: (props: LucideProps) => (
@@ -10,6 +10,7 @@ export const Icons = {
     </svg>
   ),
   Loader2,
+  Trash2,
 }
 
 export type Icon = keyof typeof Icons

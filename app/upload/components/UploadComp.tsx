@@ -4,7 +4,7 @@ import Image from 'next/image'
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined'
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined'
 
-import { Icons } from './Icons'
+import { Icons } from '../../components/Icons'
 import Caption from './Caption'
 import { type ChangeEvent, useCallback, useMemo, useRef, useState } from 'react'
 import WarningBar from './WarningBar'
