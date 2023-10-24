@@ -8,17 +8,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined'
+import {
+  generalSlice,
+  selectUserId,
+  useDispatch,
+  useSelector,
+} from '@/lib/redux'
 
 const UserButton = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
+  const dispatch = useDispatch()
+  const { setIsLoginOpen } = generalSlice.actions
+  const userId = useSelector(selectUserId)
 
   return (
     <>
-      {isLoggedIn ? (
+      {!userId ? (
         <div className="flex items-center">
           <button
-            onClick={() => {}}
+            onClick={() => {
+              dispatch(setIsLoginOpen(true))
+            }}
             className="flex items-center rounded-md border bg-[#F02C56] px-3 py-[6px] text-white"
           >
             <span className="mx-4 text-[15px] font-medium">Log in</span>
@@ -54,9 +65,8 @@ const UserButton = () => {
                 className="absolute -right-2 top-[43px] w-[200px] rounded-lg border bg-white py-1.5 shadow-xl"
               >
                 <Link
-                  href={`/profile/${1}`}
+                  href={`/profile/${userId}`}
                   onClick={() => setShowMenu(false)}
-                  //   :to="`/profile/${$userStore.id}`"
                   className="flex cursor-pointer items-center justify-start px-2 py-3 hover:bg-gray-100"
                 >
                   <PersonOutlineOutlinedIcon className="text-[20px]" />
