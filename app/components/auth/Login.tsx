@@ -1,5 +1,5 @@
 import { type ChangeEvent, useCallback, useState } from 'react'
-import TextInput from './TextInput'
+import TextInput from '../TextInput'
 
 type ErrorsType = {
   email?: string[]

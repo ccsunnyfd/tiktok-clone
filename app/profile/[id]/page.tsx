@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import EditOutlinedIcon from '@mui/icons-material/EditOutlined'
 import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined'
 import PostUser from './components/PostUser'
+import EditButton from './components/EditButton'
 
 const page = () => {
   return (
@@ -21,10 +21,7 @@ const page = () => {
           <div className="truncate text-[30px] font-bold">User Name</div>
           <div className="truncate text-[18px]">user name</div>
           {true ? (
-            <button className="item-center mt-3 flex rounded-md border px-3.5 py-1.5 text-[15px] font-semibold hover:bg-gray-100">
-              <EditOutlinedIcon className="mr-1 mt-0.5 text-[18px]" />
-              <div>Edit profile</div>
-            </button>
+            <EditButton />
           ) : (
             <button className="item-center mt-3 flex rounded-md bg-[#F02C56] px-8 py-1.5 text-[15px] font-semibold text-white">
               Follow

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import AuthOverlay from './components/auth/AuthOverlay'
 import { Providers } from '@/lib/providers'
+import EditProfileOverlay from './components/profile/EditProfileOverlay'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <AuthOverlay />
+          <EditProfileOverlay />
         </Providers>
       </body>
     </html>

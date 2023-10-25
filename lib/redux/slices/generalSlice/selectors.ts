@@ -5,3 +5,4 @@ import type { ReduxState } from '@/lib/redux'
 // the state. Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state: RootState) => state.counter.value)`
 export const selectIsLoginOpen = (state: ReduxState) => state.general.isLoginOpen
+export const selectIsEditProfileOpen = (state: ReduxState) => state.general.isEditProfileOpen

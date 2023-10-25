@@ -29,5 +29,8 @@ export const generalSlice = createSlice({
         setIsLoginOpen: (state, action: PayloadAction<boolean>) => {
             state.isLoginOpen = action.payload
         },
+        setIsEditProfileOpen: (state, action: PayloadAction<boolean>) => {
+            state.isEditProfileOpen = action.payload
+        },
     },
 })

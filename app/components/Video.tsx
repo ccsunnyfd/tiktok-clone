@@ -33,13 +33,17 @@ const Video = ({ src, img }: VideoProps) => {
         src={src}
       />
       <div className="absolute bottom-14 right-2 h-[60px] w-[90px]">
-        <Image
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          referrerPolicy="no-referrer"
-          src={img}
-          alt="overlay picture"
-        />
+        {img ? (
+          <Image
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            referrerPolicy="no-referrer"
+            src={img}
+            alt="overlay picture"
+          />
+        ) : (
+          ''
+        )}
       </div>
     </div>
   )
